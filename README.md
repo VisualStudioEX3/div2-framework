@@ -24,7 +24,7 @@ A little collection of DLLs to extend the **DIV Games Studio 2** features and la
 - **TIMER.DLL**: Advanced timers.
 
 ### Unfinished:
-- **INPUTMAN.DLL**: Advanced input manager based on maps with actions and axes.
+- **INPUTMAN.DLL**: Advanced input manager based on maps with actions and virtual axis definitions.
 - **INIFILE.DLL**: Parser to manage INI files.
 
 All source code is documented in formatted code comments. Check header files.
@@ -39,16 +39,23 @@ All source code is documented in formatted code comments. Check header files.
 This DLLs are writen in **ANSI C-89** using **Watcom C++ 10.6**. You can download it from [Archive.org](https://archive.org/details/Watcom_C_10.6) as abandoneware. 
 
 > **Warning**
-> Major versions of **Watcom** or [Open Watcom](https://github.com/open-watcom/open-watcom-v2) fork are not supported or the compiled binaries are not compatible with the expected by **DIV Games Studio 2** runtime.
+> Newer versions of **Watcom** or [Open Watcom](https://github.com/open-watcom/open-watcom-v2) fork are not supported or the compiled binaries are not compatible with the expected by **DIV Games Studio 2** runtime.
 
 Each DLL project has a file named `MAKE.BAT`. Run it to compile the DLL. Also, in the root folder, you have another `MAKE.BAT` that allows you to compile each DLL and perform a cleanup and copy the binary to the **DIV Games Studio 2** folder (check the content file to get more information to how setup properly):
 
 `MAKE.BAT <folder name>`
 
 # How to setup Watcom to compile DIV Games Studio DLLs
+> **Note**
+> Watcom C++ 10.6 is supported on current Windows versions (at least on Windows 10).
+
 - Install **Watcom C++ 10.6** using the default setup profile (this ensure that install all required dependencies).
+
+> **Warning**
+> When the installer ask you to overwrite Windows system files, click on **No** to avoid overwrite current ones with older versions that might broken your system.
+
 - When is installed, go to the `binw` folder in your **Watcom** folder.
-- Looking for the `wlsystem.lnk` file and open it in an text editor for edit.
+- Looking for the `wlsystem.lnk` file and open it in a text editor for edit.
 - Add these lines at the end (are the content of the `DIV_DLL.LNK` file):
 
 ```
