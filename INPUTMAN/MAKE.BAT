@@ -1,0 +1,8 @@
+wcl386 ^
+INPUTMAN.CPP ^
+DATA.CPP ^
+STATES.CPP ^
+PARSER.CPP ^
+..\SHARED\_DIV2LIB.CPP ^
+..\SHARED\_STRING.CPP ^
+/l=div_dll -s

@@ -19,6 +19,7 @@ A little collection of DLLs to extend the **DIV Games Studio 2** features and la
 - **MATH.DLL**: Extra math functions.
 - **RECT.DLL**: Functions to make basic operations with rectangles.
 - **STRING.DLL**: Extra functions to manipulate strings.
+- **LOGGER.DLL**: Basic logger file system.
 - **PROCESS.DLL**: Functions to manage DIV processes.
 - **TIMER.DLL**: Advanced timers.
 
