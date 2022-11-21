@@ -5,7 +5,8 @@ DIV2 Framework</h1>
 <h6 align="center">© Visual Studio EX3, José Miguel Sánchez Fernández - 2020 - 2022</h6>
 <h2 align="center">Collection of DLLs for DIV Games Studio 2</h2>
 
-[![GitHub](https://img.shields.io/github/license/VisualStudioEX3/DIV2.Format.Exporter?color=yellow)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/github/license/VisualStudioEX3/div2-framework?color=yellow)](https://opensource.org/licenses/MIT)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/VisualStudioEX3/div2-framework?color=green)](https://github.com/VisualStudioEX3/div2-framework/releases/)
 
 > **Note**
 > This repository is only for historical purpose. All this code is migrating to the new project, [DIV2 TLSA98 Engine](https://github.com/VisualStudioEX3/div2-tlsa98-engine).
