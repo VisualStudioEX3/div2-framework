@@ -4,8 +4,8 @@
  * DIV Games Studio 2 (C) Hammer Technologies - 1998, 1999
  * ---------------------------------------------------------------------------- */
 
-#ifndef __DIV_TIMER_H_
-    #define __DIV_TIMER_H_
+#ifndef __DIV_PROCESS_H_
+    #define __DIV_PROCESS_H_
 
     #include "..\shared\_const.h"
     #include "..\shared\_div2lib.h"
