@@ -34,7 +34,7 @@ All source code is documented in formatted code comments. Check header files.
 > These files are the second iteration of development. A previous version of this collection of DLLs, source code and binaries, are found in the **StarFighter** repository: https://github.com/VisualStudioEX3/StarFighter/tree/develop/DLL
 
 > **Warning**
-> This DLLs are designed to work with the original published **DIV Games Studio 2** version from 1998. Not guarantee to work in modern forks like [Div DX / DIV Games Studio 3](https://github.com/DIVGAMES/DIV-Games-Studio) or [DIV Games Studio 2.02](https://github.com/vii1/DIV) because they are not tested on them, and not are suported on forks like [Fenix Project](https://web.archive.org/web/20071012230137/http://fenix.divsite.net/) (and his variants), CDiv, [Div GO](https://www.divgo.net/), [Gemix Studio](http://www.gemixstudio.com/), [Bennu GD](https://www.bennugd.org/), or [PixTudio](https://pixtudio.org/).
+> This DLLs are designed to work with the original published **DIV Games Studio 2** version from 1998. Not guarantee to work in modern forks like [Div DX / DIV Games Studio 3](https://github.com/DIVGAMES/DIV-Games-Studio) or [DIV Games Studio 2.02](https://github.com/vii1/DIV) because they are not tested on them, and not are suported on forks like [Fenix Project](https://web.archive.org/web/20071012230137/http://fenix.divsite.net/) (and his variants), [eDivc](https://github.com/vroman/edivc), CDiv, [Div GO](https://www.divgo.net/), [Gemix Studio](http://www.gemixstudio.com/), [Bennu GD](https://www.bennugd.org/), or [PixTudio](https://pixtudio.org/).
 
 # How to compile
 This DLLs are writen in **ANSI C-89** using **Watcom C++ 10.6**. You can download it from [Archive.org](https://archive.org/details/Watcom_C_10.6) as abandoneware. 
@@ -50,10 +50,12 @@ Each DLL project has a file named `MAKE.BAT`. Run it to compile the DLL. Also, i
 > **Note**
 > Watcom C++ 10.6 is supported on current Windows versions (at least on Windows 10).
 
-- Install **Watcom C++ 10.6** using the default setup profile (this ensure that install all required dependencies).
+1. Start `SETUP32.EXE` and when the wizard ask you to choice the type of installation select the **Selective installation** option.
+2. In the next wizard, go to **Target operating systems** section and select **DOS**.
+3. Start installation process.
 
 > **Warning**
-> When the installer ask you to overwrite Windows system files, click on **No** to avoid overwrite current ones with older versions that might broken your system.
+> When the installer ask you to overwrite Windows system files, select on **Do not install the new file** option, and mark **Use the current choice for all subsquent DLLs**, to avoid overwrite current ones with older versions that might broken your system.
 
 - When is installed, go to the `binw` folder in your **Watcom** folder.
 - Looking for the `wlsystem.lnk` file and open it in a text editor for edit.
@@ -81,7 +83,7 @@ Is a full windows graphic environment with tools for creation and editing 2D gra
 
 This engine allow to develop common 2D games with a full of advanced graphic features, and pseudo 3D games using the [Mode7](https://en.wikipedia.org/wiki/Mode_7) and later, with DIV2, the Mode8 (3D feature like the original Doom).
 
-**DIV Games Studio** was very popular at the end of ninetys and early 2000. Was the start point of an entire generation of game developers of nowdays. During the years, the community was develop a multiple forks like [Fenix Project](https://web.archive.org/web/20071012230137/http://fenix.divsite.net/) (with multiple flavours), CDiv, [Div GO](https://www.divgo.net/), [Gemix Studio](http://www.gemixstudio.com/), [Bennu GD](https://www.bennugd.org/), or [PixTudio](https://pixtudio.org/).
+**DIV Games Studio** was very popular at the end of ninetys and early 2000. Was the start point of an entire generation of game developers of nowdays. During the years, the community was develop a multiple forks like [Fenix Project](https://web.archive.org/web/20071012230137/http://fenix.divsite.net/) (with multiple flavours), [eDivc](https://github.com/vroman/edivc), CDiv, [Div GO](https://www.divgo.net/), [Gemix Studio](http://www.gemixstudio.com/), [Bennu GD](https://www.bennugd.org/), or [PixTudio](https://pixtudio.org/).
 
 Currently exists 2 projects to bring it to live again:
 * [Div DX / DIV Games Studio 3](https://github.com/DIVGAMES/DIV-Games-Studio) - A port of DIV Games Studio 2 to modern systems (running on Windows, Linux and Mac natively) but keeping the all original features of DIV Games Studio 2. One of the interested features, including the fix of most of the existing bugs on original DIV2, is the posibility of export the games natively to multiple systems, including Android, HTML5 and some consoles. This project has still in beta and seems to be abandoned since 2016.
