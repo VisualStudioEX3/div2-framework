@@ -8,7 +8,7 @@ DIV2 Framework</h1>
 [![GitHub](https://img.shields.io/github/license/VisualStudioEX3/div2-framework?color=yellow)](https://opensource.org/licenses/MIT)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/VisualStudioEX3/div2-framework?color=green)](https://github.com/VisualStudioEX3/div2-framework/releases/)
 
-> **Note**
+> [!NOTE]
 > This repository is only for historical purpose. All this code is migrating to the new project, [DIV2 TLSA98 Engine](https://github.com/VisualStudioEX3/div2-tlsa98-engine).
 
 # Introduction
@@ -30,16 +30,16 @@ A little collection of DLLs to extend the **DIV Games Studio 2** features and la
 
 All source code is documented in formatted code comments. Check header files.
 
-> **Note**
+> [!NOTE]
 > These files are the second iteration of development. A previous version of this collection of DLLs, source code and binaries, are found in the **StarFighter** repository: https://github.com/VisualStudioEX3/StarFighter/tree/develop/DLL
 
-> **Warning**
-> This DLLs are designed to work with the original published **DIV Games Studio 2** version from 1998. Not guarantee to work in modern forks like [Div DX / DIV Games Studio 3](https://github.com/DIVGAMES/DIV-Games-Studio) or [DIV Games Studio 2.02](https://github.com/vii1/DIV) because they are not tested on them, and not are suported on forks like [Fenix Project](https://web.archive.org/web/20071012230137/http://fenix.divsite.net/) (and his variants), [eDivc](https://github.com/vroman/edivc), CDiv, [Div GO](https://www.divgo.net/), [Gemix Studio](http://www.gemixstudio.com/), [Bennu GD](https://www.bennugd.org/), or [PixTudio](https://pixtudio.org/).
+> [!WARNING]
+> These DLLs are designed to work with the original published **DIV Games Studio 2** version from 1998. Not guarantee to work in modern forks like [Div DX / DIV Games Studio 3](https://github.com/DIVGAMES/DIV-Games-Studio) or [DIV Games Studio 2.02](https://github.com/vii1/DIV) because they are not tested on them, and not are suported on forks like [Fenix Project](https://web.archive.org/web/20071012230137/http://fenix.divsite.net/) (and his variants), [eDivc](https://github.com/vroman/edivc), CDiv, [Div GO](https://www.divgo.net/), [Gemix Studio](http://www.gemixstudio.com/), [Bennu GD](https://www.bennugd.org/), or [PixTudio](https://pixtudio.org/).
 
 # How to compile
-This DLLs are writen in **ANSI C-89** using **Watcom C++ 10.6**. You can download it from [Archive.org](https://archive.org/details/Watcom_C_10.6) as abandoneware. 
+These DLLs are writen in **ANSI C-89** using **Watcom C++ 10.6**. You can download it from [Archive.org](https://archive.org/details/Watcom_C_10.6) as abandoneware. 
 
-> **Warning**
+> [!IMPORTANT]
 > Newer versions of **Watcom** or [Open Watcom](https://github.com/open-watcom/open-watcom-v2) fork are not supported or the compiled binaries are not compatible with the expected by **DIV Games Studio 2** runtime.
 
 Each DLL project has a file named `MAKE.BAT`. Run it to compile the DLL. Also, in the root folder, you have another `MAKE.BAT` that allows you to compile each DLL and perform a cleanup and copy the binary to the **DIV Games Studio 2** folder (check the content file to get more information to how setup properly):
@@ -47,19 +47,19 @@ Each DLL project has a file named `MAKE.BAT`. Run it to compile the DLL. Also, i
 `MAKE.BAT <folder name>`
 
 # How to setup Watcom to compile DIV Games Studio DLLs
-> **Note**
+> [!NOTE]
 > Watcom C++ 10.6 is supported on current Windows versions (at least on Windows 10).
 
 1. Start `SETUP32.EXE` and when the wizard ask you to choice the type of installation select the **Selective installation** option.
 2. In the next wizard, go to **Target operating systems** section and select **DOS**.
 3. Start installation process.
 
-> **Warning**
+> [!CAUTION]
 > When the installer ask you to overwrite Windows system files, select on **Do not install the new file** option, and mark **Use the current choice for all subsquent DLLs**, to avoid overwrite current ones with older versions that might broken your system.
 
-- When is installed, go to the `binw` folder in your **Watcom** folder.
-- Looking for the `wlsystem.lnk` file and open it in a text editor for edit.
-- Add these lines at the end (are the content of the `DIV_DLL.LNK` file):
+4. When is installed, go to the `binw` folder in your **Watcom** folder.
+5. Looking for the `wlsystem.lnk` file and open it in a text editor for edit.
+6. Add these lines at the end (are the content of the `DIV_DLL.LNK` file):
 
 ```
 system begin div_dll
@@ -70,7 +70,7 @@ system begin div_dll
 end
 ```
 
-> **Warning**
+> [!IMPORTANT]
 > If you try to compile from **Windows**, check if `wcl386` command is recognized by the **Windows Command Prompt** or **PowerShell** console. If not, add the `C:\<WATCOM FOLDER PATH>\BINW` path to the Windows environment variables.
 
 # What is DIV Games Studio?
